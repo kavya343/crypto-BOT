@@ -1,0 +1,40 @@
+
+//Ethereum Transaction Monitor
+//This Python script monitors Ethereum blockchain transactions 
+//using the web3 library. It connects to the Ethereum network via Infura, 
+//logs transactions involving specified wallets, and performs actions based on transaction events.
+
+//Dependencies
+//Python 3.x
+//web3 library: Allows interaction with Ethereum nodes.
+//logging module: Configured to log transaction details and status.
+
+
+//Install dependencies using:
+//pip install web3 logging
+//Configuration
+//Infura URL: Replace infura_url with your Infura project's URL for Ethereum mainnet or testnet.
+//
+//Wallets and Addresses: Modify TARGET_WALLETS, MY_WALLET_ADDRESS, and MY_PRIVATE_KEY with your specific wallet addresses and private key.
+
+//DAI Contract Details: Update DAI_CONTRACT_ADDRESS and DAI_ABI with the ERC20 token contract address and ABI for DAI or your preferred token.
+
+//Features
+//Connection Check: Verifies connection to the Ethereum node via Infura.
+//Transaction Monitoring: Monitors transactions in real-time by fetching latest block transactions every 10 seconds.
+//Transaction Processing: Processes transactions involving specified wallets:
+//Buys DAI token if someone transfers Ether to the DAI contract.
+//Sells DAI token if someone transfers DAI from their wallet.
+
+
+//Run the script:
+
+//python ethereum_monitor.py
+//The script logs its actions and transaction details using logging, ensuring transparency and traceability of operations.
+
+//Logging
+//Level: INFO
+//Format: Timestamp - Log Level - Message
+//Logs include connection status, transaction processing details, and errors if connection fails or transactions encounter issues.
+
+
